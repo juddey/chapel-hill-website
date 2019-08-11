@@ -1,20 +1,20 @@
 {
-  "name": "undefined",
-  "description": "A minimal starter theme for the Ghost blogging platform",
-  "demo": "http://github.com/curiositry/undefined-ghost-theme",
-  "version": "1.4.1",
-  "engines": {
-      "ghost": ">=2.9.1",
-      "ghost-api": "v2"
-  },
-  "author": {
-      "name": "Curiositry",
-      "email": "isa@automathic.org",
-      "url": "http://curiositry.com"
-  },
-  "config": {
-      "posts_per_page": 5,
-      "image_sizes": {
+    "name": "undefined",
+    "description": "A minimal starter theme for the Ghost blogging platform",
+    "demo": "http://github.com/curiositry/undefined-ghost-theme",
+    "version": "1.4.1",
+    "engines": {
+        "ghost": ">=2.9.1",
+        "ghost-api": "v2"
+    },
+    "author": {
+        "name": "Curiositry",
+        "email": "isa@automathic.org",
+        "url": "http://curiositry.com"
+    },
+    "config": {
+        "posts_per_page": 5,
+        "image_sizes": {
             "xs": {
                 "width": 400
             },
@@ -31,27 +31,42 @@
                 "width": 3000
             }
         }
-  },
-  "gpm": {
-      "type": "theme",
-      "categories": [
-          "Minimal",
-          "Responsive",
-          "Starter theme",
-          "Boilerplate",
-          "Typographic"
-      ]
-  },
-  "keywords": [
-      "responsive",
-      "ghost",
-      "starter",
-      "theme",
-      "ghost-theme",
-      "boilerplate"
-  ],
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/curiositry/undefined-ghost-theme.git"
-  }
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Responsive",
+            "Starter theme",
+            "Boilerplate",
+            "Typographic"
+        ]
+    },
+    "keywords": [
+        "responsive",
+        "ghost",
+        "starter",
+        "theme",
+        "ghost-theme",
+        "boilerplate"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/curiositry/undefined-ghost-theme.git"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "autoprefixer": "^9.6.1",
+        "babel-loader": "^8.0.6",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "css-loader": "^3.2.0",
+        "html-loader": "^0.5.5",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^1.0.0",
+        "url-loader": "^2.1.0",
+        "webpack": "^4.39.1",
+        "webpack-cli": "^3.3.6",
+        "webpack-livereload-plugin": "^2.2.0"        
+    }
 }
