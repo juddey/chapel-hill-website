@@ -1,0 +1,28 @@
+<header class="main-header" id="main-header">
+<div class="container">
+
+  {{#if @site.logo}}
+    <div class="main-header__logo">
+      <a href="{{@site.url}}">
+        <img src="{{@site.logo}}" alt="{{@site.title}} Logo" />
+      </a>
+    </div>
+  {{/if}}
+
+  <div class="main-header__text-container">
+    <h1 class="main-header__blog-title">
+      <a href="{{@site.url}}">{{@site.title}}</a>
+    </h1>
+    <h3 class="main-header__blog-description">
+      {{@site.description}}
+    </h3>
+  </div>
+
+    <nav>
+
+        {{navigation}}
+
+    </nav>
+
+</div>
+</header>
