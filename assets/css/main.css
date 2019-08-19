@@ -17,6 +17,39 @@ figure {
   margin-right: auto;
 }
 
+nav {
+  background-color: black;
+  border: 1px solid red;
+  padding-right: 5px
+}
+
+
+ul[role=menu] {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+li[role=menuitem] {
+  list-style-type : none;
+  margin-left: 5px;
+}
+
+nav ul li a {
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: white;
+  padding: 7px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  border: 1px solid white;
+  font-weight: 600;  
+}
 /* IMAGE WIDTH STYLES */
 /* ================== */
 
