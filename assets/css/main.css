@@ -18,11 +18,14 @@ figure {
 }
 
 nav {
-  background-color: black;
-  border: 1px solid red;
-  padding-right: 5px
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  justify-content: flex-end;
+  z-index: 100;
 }
-
 
 ul[role=menu] {
   display: flex;
@@ -41,6 +44,7 @@ nav ul li a {
   color: white;
   padding: 7px 14px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
@@ -48,7 +52,59 @@ nav ul li a {
 
 nav ul li a:hover {
   border: 1px solid white;
-  font-weight: 600;  
+}
+
+#cf {
+  position: relative;
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+#cf img {
+  position: absolute;
+  height: 500px;
+  width: 800px;
+  left: 0;
+}
+
+#cf img {
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+}
+
+@keyframes cfFadeInOut {
+  0% {
+    opacity:1;
+  }
+  33% {
+    opacity:1;
+  }
+  43% {
+    opacity:0;
+  }
+  93% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#cf img:nth-of-type(1) {
+  animation-delay: 12s;
+}
+#cf img:nth-of-type(2) {
+  animation-delay: 8s;
+}
+#cf img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+#cf img:nth-of-type(4) {
+  animation-delay: 0;
 }
 /* IMAGE WIDTH STYLES */
 /* ================== */
