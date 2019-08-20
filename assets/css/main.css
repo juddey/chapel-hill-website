@@ -31,6 +31,7 @@ ul[role=menu] {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 
 li[role=menuitem] {
