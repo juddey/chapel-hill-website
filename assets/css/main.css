@@ -60,7 +60,6 @@ nav ul li a:hover {
   height: 500px;
   width: 800px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 #cf img {
@@ -107,6 +106,35 @@ nav ul li a:hover {
 #cf img:nth-of-type(4) {
   animation-delay: 0;
 }
+
+.cf-title {
+  position: absolute;
+  color: white;
+  z-index: 500;
+  margin-top: 75px;
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cf-title h1 {
+  font-size: 24px;
+  justify-content: center;
+}
+
+.cf-title .container {
+  display: block;
+  text-align: center;
+}
+
+.cf-title p {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+
 /* IMAGE WIDTH STYLES */
 /* ================== */
 
