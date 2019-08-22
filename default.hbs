@@ -8,13 +8,12 @@
   {{! Makes IE support useful HTML5/CSS3 features }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-
   {{! Page Meta }}
   <title>{{meta_title}}{{#is "post, page"}} — {{@site.title}}{{/is}}</title>
 
   {{! Styles }}
-  {{! <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}
-  <script type="text/javascript" src="{{asset "dist/bundle.js"}}"></script> 
+  <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}>
+
   {{! Ghost outputs important stuff with this tag }}
   {{ghost_head}}
 </head>
@@ -27,6 +26,5 @@
 
   {{! Ghost outputs important scripts with this, including the the content for the code injection pane }}
   {{ghost_foot}}
-
 </body>
 </html>

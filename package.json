@@ -56,6 +56,8 @@
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
         "autoprefixer": "^9.6.1",
         "babel-loader": "^8.0.6",
         "browser-sync": "^2.26.7",
@@ -67,6 +69,11 @@
         "url-loader": "^2.1.0",
         "webpack": "^4.39.1",
         "webpack-cli": "^3.3.6",
-        "webpack-livereload-plugin": "^2.2.0"        
+        "webpack-livereload-plugin": "^2.2.0"
+    },
+    "dependencies": {
+        "@tryghost/content-api": "^1.2.7",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
     }
 }

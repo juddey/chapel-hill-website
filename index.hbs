@@ -18,7 +18,19 @@
   <img src="/assets/images/priscilla-du-preez-697316-unsplash.jpg" />
 </div>
 
-<main class="content post-list" id="content">
-  {{!-- The tag below includes the post loop - partials/loop.hbs --}}
-  {{> "loop"}}
-</main>
+<div class="events">
+  <h1>Next Events</h1>
+  {{#get "posts" filter="tag:events" limit="3" as |event| }}
+  <div class="event-wrapper">
+    {{#foreach event}}
+    <div class="event">
+      <a class="link" href={{ url }}>
+        <div class="title">{{title}}</div>
+        <p>{{ excerpt words="15" }} </p>
+        <p></p>
+      </a>
+    </div>
+    {{/foreach}}
+  </div>
+  {{/get}}
+</div>

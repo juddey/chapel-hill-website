@@ -25,13 +25,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: ['babel-loader']
+        use: [ { loader: 'babel-loader'}]
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        use: ['html-loader']
       }
     ]
   },

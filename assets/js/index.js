@@ -1,5 +1,5 @@
-function log_message() {
-  console.log("Javascript Bundling  !!!")
-}
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Events from './events'
 
-log_message()
+ReactDOM.render(<Events />, document.getElementById("events"));
