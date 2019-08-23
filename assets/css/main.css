@@ -1,4 +1,41 @@
-/* Using Normalize.css from: https://yarnpkg.com/en/package/normalize.css */
+/* Table of Contents
+/* ------------------------------------------------------------
+This is a development CSS file which is built to a minified
+production stylesheet in assets/built/screen.css
+Using Normalize.css from: https://yarnpkg.com/en/package/normalize.css to
+level the playing field.
+
+1.  Global Styles
+2.  Navigation
+3.  Site Header
+4.  Index
+  4.1 Hero
+  4.2 Next Events
+  4.3 Ministries
+
+--- More entries here.
+5.  Site Navigation
+6.  Post Feed
+7.  Single Post
+  7.1. Subscribe Form
+  7.2. Post Footer
+     7.2.1 Single Author Byline
+     7.2.2 Multiple Author Byline
+  7.3. Comments
+  7.4. Related Posts
+  7.5. Floating Header
+8.  Author Template
+9.  Error Template
+10. Subscribe Overlay
+11. Site Footer
+*/
+
+/* 1. Global - Set up the things
+/* ---------------------------------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   max-width: 1440px;
@@ -6,6 +43,23 @@ body {
   margin-left: auto;
   font-family: 'Raleway';
 }
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.0rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+/* 2. Navigation
+/* ---------------------------------------------------------- */
 
 nav {
   display: flex;
@@ -28,7 +82,7 @@ li[role=menuitem] {
 nav ul li a {
   color: black;
   padding: 7px 14px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -38,6 +92,10 @@ nav ul li a {
 nav ul li a:hover {
   border: 1px solid black;
 }
+
+/* 4. Index Page  */
+/* 4.1 Hero  */
+/* ---------------------------------------------------------- */
 
 #hero {
   position: relative;
@@ -101,7 +159,7 @@ nav ul li a:hover {
 }
 
 .hero-title h1 {
-  font-size: 24px;
+  font-size: 2.4rem;
   justify-content: center;
 }
 
@@ -111,9 +169,12 @@ nav ul li a:hover {
 }
 
 .hero-title p {
-  font-size: 20px;
+  font-size: 2rem;
   margin: 0 auto;
 }
+
+/* 4.2 Next Events  */
+/* ---------------------------------------------------------- */
 
 .events {
   display: flex;
@@ -121,17 +182,6 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   min-height: 100px;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
 }
 
 .events .event-wrapper {
@@ -150,13 +200,14 @@ h2 {
   justify-content: center;  
   border-left: 2px solid grey;
   padding: 10px;
-  text-align: center;
+  text-align: center; 
 }
 
 .events .event:first-child {
   border-left: none;
 }
 .events .event .title {
+  font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
 }
@@ -172,6 +223,13 @@ h2 {
   height:100%;
 }
 
+.events .event .link p {
+  font-size: 1.4rem
+}
+
+/* 4.3 Ministries  */
+/* ---------------------------------------------------------- */
+
 .ministries {
   margin-bottom: 50px;
 }
@@ -184,6 +242,7 @@ h2 {
 }
 
 .ministries .ministry .title {
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -199,51 +258,16 @@ h2 {
   display: flex;
   justify-content: center;  
   align-items: center;
+}
 
+
+.ministries .ministry p {
+  font-size: 1.6rem;
 }
 
 .site-footer {
   text-align: center;
 }
-
-
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  } 
-
-
-}
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-  body {
-    background-color: greenyellow; 
-  }
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-  body {
-    background-color: orange; 
-  }
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-  body {
-    background-color: purple; 
-  }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-
-  body {
-    background-color: #fff;
-  }
- } 
 
 /* IMAGE WIDTH STYLES */
 /* ================== */
