@@ -1,9 +1,9 @@
-/* Put your styles (or personal collection of CSS frameworks) here */
+/* Using Normalize.css from: https://yarnpkg.com/en/package/normalize.css */
+
 body {
-  max-width: 800px;
+  max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
-  line-height: 1.5;
   font-family: 'Raleway';
 }
 

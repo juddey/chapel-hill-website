@@ -70,16 +70,12 @@
         "browser-sync-webpack-plugin": "^2.2.2",
         "css-loader": "^3.2.0",
         "html-loader": "^0.5.5",
+        "normalize.css": "^8.0.1",
         "postcss-loader": "^3.0.0",
         "style-loader": "^1.0.0",
         "url-loader": "^2.1.0",
         "webpack": "^4.39.1",
         "webpack-cli": "^3.3.6",
         "webpack-livereload-plugin": "^2.2.0"
-    },
-    "dependencies": {
-        "@tryghost/content-api": "^1.2.7",
-        "react": "^16.9.0",
-        "react-dom": "^16.9.0"
     }
 }
