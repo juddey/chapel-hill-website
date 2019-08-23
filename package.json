@@ -15,6 +15,12 @@
     "config": {
         "posts_per_page": 5,
         "image_sizes": {
+            "thumb": {
+                "width": 100
+            },
+            "card": {
+                "width": 200
+            },
             "xs": {
                 "width": 400
             },

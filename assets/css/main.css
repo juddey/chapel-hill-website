@@ -1,5 +1,4 @@
 /* Put your styles (or personal collection of CSS frameworks) here */
-
 body {
   max-width: 800px;
   margin-right: auto;
@@ -112,7 +111,6 @@ nav ul li a:hover {
   color: white;
   z-index: 500;
   margin-top: 75px;
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -143,9 +141,15 @@ nav ul li a:hover {
   min-height: 100px;
 }
 
-.events h1 {
-  color: black;
+h1 {
+  text-align: center;
   text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
 }
 
 .events .event-wrapper {
@@ -186,6 +190,40 @@ nav ul li a:hover {
   height:100%;
 }
 
+.ministries {
+  margin-bottom: 50px;
+}
+
+.ministries .ministry-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ministries .ministry .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ministries .ministry {
+  flex-direction: column;
+  text-align: center;
+  max-width: 33%;
+}
+
+.ministries .ministry .img-wrapper {
+  height: 175px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+
+}
+
+
+.site-footer {
+  text-align: center;
+}
 
 /* IMAGE WIDTH STYLES */
 /* ================== */
