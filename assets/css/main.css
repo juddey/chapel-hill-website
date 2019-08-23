@@ -10,10 +10,7 @@ body {
 nav {
   display: flex;
   width: 100%;
-  background-color: transparent;
-  position: absolute;
   justify-content: flex-end;
-  z-index: 100;
 }
 
 ul[role=menu] {
@@ -29,9 +26,7 @@ li[role=menuitem] {
 }
 
 nav ul li a {
-  border: 1px solid transparent;
-  background-color: transparent;
-  color: white;
+  color: black;
   padding: 7px 14px;
   font-size: 16px;
   font-weight: 600;
@@ -41,23 +36,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 #hero {
   position: relative;
-  height: 500px;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  padding-bottom: 62.5%;
 }
 
 #hero img {
   position: absolute;
-  height: 500px;
   width: 100%;
-  max-width: 800ps;
-  left: 0;
+  height: 100%;
 }
 
 #hero img {
@@ -125,7 +116,6 @@ nav ul li a:hover {
 }
 
 .events {
-  position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -212,10 +202,48 @@ h2 {
 
 }
 
-
 .site-footer {
   text-align: center;
 }
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  } 
+
+
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  body {
+    background-color: greenyellow; 
+  }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  body {
+    background-color: orange; 
+  }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  body {
+    background-color: purple; 
+  }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+  body {
+    background-color: #fff;
+  }
+ } 
 
 /* IMAGE WIDTH STYLES */
 /* ================== */
