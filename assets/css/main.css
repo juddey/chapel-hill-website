@@ -1,24 +1,14 @@
 /* Using Normalize.css from: https://yarnpkg.com/en/package/normalize.css */
 
 body {
-  max-width: 1920px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Raleway';
 }
 
-img {
-  max-width: 100%;
-}
-
-figure {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 nav {
   display: flex;
-  max-width: 800px;
   width: 100%;
   background-color: transparent;
   position: absolute;
@@ -54,28 +44,30 @@ nav ul li a:hover {
   border: 1px solid white;
 }
 
-#cf {
+#hero {
   position: relative;
   height: 500px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-#cf img {
+#hero img {
   position: absolute;
   height: 500px;
-  width: 800px;
+  width: 100%;
+  max-width: 800ps;
   left: 0;
 }
 
-#cf img {
-  animation-name: cfFadeInOut;
+#hero img {
+  animation-name: heroFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 13s;
 }
 
-@keyframes cfFadeInOut {
+@keyframes heroFadeInOut {
   0% {
     opacity:1;
   }
@@ -93,20 +85,20 @@ nav ul li a:hover {
   }
 }
 
-#cf img:nth-of-type(1) {
+#hero img:nth-of-type(1) {
   animation-delay: 12s;
 }
-#cf img:nth-of-type(2) {
+#hero img:nth-of-type(2) {
   animation-delay: 8s;
 }
-#cf img:nth-of-type(3) {
+#hero img:nth-of-type(3) {
   animation-delay: 4s;
 }
-#cf img:nth-of-type(4) {
+#hero img:nth-of-type(4) {
   animation-delay: 0;
 }
 
-.cf-title {
+.hero-title {
   position: absolute;
   color: white;
   z-index: 500;
@@ -117,17 +109,17 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.cf-title h1 {
+.hero-title h1 {
   font-size: 24px;
   justify-content: center;
 }
 
-.cf-title .container {
+.hero-title .container {
   display: block;
   text-align: center;
 }
 
-.cf-title p {
+.hero-title p {
   font-size: 20px;
   margin: 0 auto;
 }
